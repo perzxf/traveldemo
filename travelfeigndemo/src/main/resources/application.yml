@@ -1,0 +1,12 @@
+server:
+  port: 8091
+spring:
+  application:
+    name: cloudfeign
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8088/eureka
+feign:
+  hystrix:
+    enabled: true
